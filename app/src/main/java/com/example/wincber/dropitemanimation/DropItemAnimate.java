@@ -99,7 +99,7 @@ public class DropItemAnimate {
         ImageView item = new ImageView(mContext);
         item.setX(start.x);
         item.setY(start.y);
-        Drawable nextItem = dropItems[random.nextInt((dropItems.length - 1)) ];
+        Drawable nextItem = dropItems[random.nextInt(dropItems.length) ];
         item.setImageDrawable(nextItem);
         mViewGroup.addView(item,mLayoutParams);
         startAnimate(item,start,end);
